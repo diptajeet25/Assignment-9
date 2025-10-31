@@ -2,7 +2,7 @@ import React from 'react';
 
 const Carsoul = () => {
   return (
-    <div className='w-7/10 mx-auto my-16 h-30  max' >
+    <div className='w-[90%] lg:w-7/10 mx-auto my-16   max' >
         <div className="carousel ">
   <div id="slide1" className="carousel-item relative w-full">
     <img
