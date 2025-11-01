@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "title": "PlayerUnknown's Battlegrounds: PUBG Mobile",
+    "coverPhoto": "https://wallpapercave.com/wp/wp4037778.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": 4.5,
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://wallpapers.com/images/featured/call-of-duty-pictures-7lrqnchbx478ucgg.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty: Mobile brings iconic maps, modes, and characters from the legendary franchise to your smartphone.",
+    "ratings": 4.6,
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i0.wp.com/cosplay.ph/wp-content/uploads/2023/08/ad5a19d3870e9597ffd9c82998fd01fe_8246049044075884850.jpg?fit=640%2C400&ssl=1",
+    "category": "RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/en/",
+    "description": "Genshin Impact is an open-world action RPG where players explore Teyvat, harness elemental powers, and unravel mysteries.",
+    "ratings": 4.7,
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "4",
+    "title": "eFootball 2025",
+    "coverPhoto": "https://efootballchampionship.konami.net/media/items/014_efootball_championship-open_1200x600.jpg",
+    "category": "Sports",
+    "downloadLink": "https://www.konami.com/efootball/en/",
+    "description": "eFootball 2025 brings realistic football action, improved player physics, and online competitive matches to mobile.",
+    "ratings": 4.4,
+    "developer": "Konami"
+  },
+  {
+    "id": "5",
+    "title": "Real Cricket 24",
+    "coverPhoto": "https://i.ytimg.com/vi/pNMmOIu8Zik/maxresdefault.jpg",
+    "category": "Sports",
+    "downloadLink": "https://www.nautilusmobile.com/real-cricket/",
+    "description": "Real Cricket 24 offers authentic cricket gameplay with dynamic commentary, realistic animations, and multiple game modes.",
+    "ratings": 4.3,
+    "developer": "Nautilus Mobile"
+  },
+  {
+    "id": "6",
+    "title": "Dream League Soccer 2024",
+    "coverPhoto": "https://i.ytimg.com/vi/rqYmFOH8uWU/maxresdefault.jpg",
+    "category": "Sports",
+    "downloadLink": "https://www.ftgames.com/games/dream-league-soccer",
+    "description": "Build your dream football team and compete in top-tier matches with stunning graphics and smooth gameplay.",
+    "ratings": 4.4,
+    "developer": "First Touch Games"
+  },
+  {
+    "id": "7",
+    "title": "Free Fire MAX",
+    "coverPhoto": "https://wallpapercave.com/wp/wp12811424.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com/en/",
+    "description": "Free Fire MAX is a graphically enhanced version of the fast-paced survival shooter, offering thrilling battle royale matches.",
+    "ratings": 4.2,
+    "developer": "Garena"
+  },
+  {
+    "id": "8",
+    "title": "Among Us",
+    "coverPhoto": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/945360/capsule_616x353.jpg?t=1757444903",
+    "category": "Party",
+    "downloadLink": "https://innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a social deduction game where players work together to find the imposter sabotaging the crew.",
+    "ratings": 4.5,
+    "developer": "Innersloth"
+  },
+  {
+    "id": "9",
+    "title": "Mobile Legends: Bang Bang",
+    "coverPhoto": "https://cdn.gamerbraves.com/2020/06/mobile-legends-bang-bang.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://m.mobilelegends.com/",
+    "description": "Mobile Legends: Bang Bang is a 5v5 MOBA that delivers intense real-time battles and competitive team gameplay.",
+    "ratings": 4.3,
+    "developer": "Moonton"
+  },
+  {
+    "id": "10",
+    "title": "Apex Legends Mobile",
+    "coverPhoto": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/f002ac48d98f501231e7d8bd3cc418b65c8d511a/capsule_616x353.jpg?t=1754578148",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends/apex-legends-mobile",
+    "description": "Apex Legends Mobile brings the popular hero-based shooter to handheld devices with fast-paced tactical action.",
+    "ratings": 4.4,
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "11",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://i.ytimg.com/vi/oayEMtWXZ60/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6Smb7xVlk-ye1HXoOjOm0CKS9cA",
+    "category": "Arcade",
+    "downloadLink": "https://sybogames.com/games/subway-surfers/",
+    "description": "Subway Surfers is a fast-paced endless runner where players dash through trains, dodge obstacles, and collect coins.",
+    "ratings": 4.5,
+    "developer": "SYBO Games"
+  },
+  {
+    "id": "12",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://images.indianexpress.com/2018/12/Asphalt-9-Legends-759.jpg",
+    "category": "Racing",
+    "downloadLink": "https://asphaltlegends.com/",
+    "description": "Asphalt 9: Legends features high-speed races, incredible cars, and breathtaking visuals on mobile.",
+    "ratings": 4.4,
+    "developer": "Gameloft"
+  },
+  {
+    "id": "13",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://i.ytimg.com/vi/vmrVJ5UBdb4/maxresdefault.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "Build your village, raise a clan, and compete in epic Clan Wars in this legendary strategy game.",
+    "ratings": 4.4,
+    "developer": "Supercell"
+  },
+  {
+    "id": "14",
+    "title": "Candy Crush Saga",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNy7v1yPPv4UfvW0OvQN_aTlTXYBNVGrAmisMR_oWk2czw9w-3fG33NVlsf--GCaS_54&usqp=CAU",
+    "category": "Puzzle",
+    "downloadLink": "https://king.com/game/candycrush",
+    "description": "Candy Crush Saga is a match-three puzzle game full of sweet challenges and satisfying combos.",
+    "ratings": 4.6,
+    "developer": "King"
+  },
+  {
+    "id": "15",
+    "title": "Temple Run 2",
+    "coverPhoto": "https://i.ytimg.com/vi/MH4mg0PON2k/maxresdefault.jpg",
+    "category": "Arcade",
+    "downloadLink": "https://imangistudios.com/temple-run-2/",
+    "description": "Temple Run 2 is a thrilling endless running game filled with obstacles, jumps, and treasure hunting.",
+    "ratings": 4.3,
+    "developer": "Imangi Studios"
+  },
+  {
+    "id": "16",
+    "title": "Real Racing 3",
+    "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJUfE92u7tBYlyTXPyZCS678QVhAz8XBp9Tg&s",
+    "category": "Racing",
+    "downloadLink": "https://www.ea.com/games/real-racing/real-racing-3",
+    "description": "Real Racing 3 brings realistic racing simulation with licensed tracks, cars, and real-time multiplayer.",
+    "ratings": 4.5,
+    "developer": "EA Sports"
+  },
+  {
+    "id": "17",
+    "title": "BGMI: Battlegrounds Mobile India",
+    "coverPhoto": "https://assets.krafton.in/files/bgmi-thumbnail.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.battlegroundsmobileindia.com/",
+    "description": "BGMI is India’s version of PUBG Mobile, featuring intense matches and localized content.",
+    "ratings": 4.4,
+    "developer": "Krafton"
+  },
+  {
+    "id": "18",
+    "title": "Fortnite Mobile",
+    "coverPhoto": "https://www.cyberpowerpc.com/blog/w/wp-content/uploads/2018/02/fortnite.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/en-US/mobile",
+    "description": "Fortnite Mobile combines building mechanics with competitive battle royale gameplay and colorful visuals.",
+    "ratings": 4.5,
+    "developer": "Epic Games"
+  },
+  {
+    "id": "19",
+    "title": "Roblox",
+    "coverPhoto": "https://images.tynker.com/blog/wp-content/uploads/20250414130639/roblox22.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.roblox.com/",
+    "description": "Roblox lets players create, share, and play millions of user-generated worlds and experiences.",
+    "ratings": 4.3,
+    "developer": "Roblox Corporation"
+  },
+  {
+    "id": "20",
+    "title": "Minecraft",
+    "coverPhoto": "https://gaming-cdn.com/images/products/14986/616x353/minecraft-java-and-bedrock-edition-deluxe-collection-deluxe-collection-pc-game-microsoft-store-europe-cover.jpg?v=1696925849",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "Minecraft is a sandbox adventure game where players build, explore, and survive in limitless blocky worlds.",
+    "ratings": 4.8,
+    "developer": "Mojang Studios"
+  }
+]
