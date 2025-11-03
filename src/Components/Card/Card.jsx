@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({game}) => {
     console.log(game)
   return (
-    <div className="card bg-base-100  shadow-sm h-full">
+    <div className="card bg-base-100 cursor-pointer shadow-sm h-full">
   <figure>
     <img
       src={game.coverPhoto}

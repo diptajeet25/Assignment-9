@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router';
 import logo from '../../assets/logo.png'
+import { AuthanticationContext } from '../../Context/AuthContext';
 
 const Navbar = () => {
-
+const {user}=useContext(AuthanticationContext);
+console.log(user)
   const link = (
     <>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/games">Games</Link></li>
-    
       <li><Link to="/">Career</Link></li>
     </>
   )
@@ -36,8 +37,14 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end flex gap-2">
+    { user ? <img src={user.photoURL}  className='w-10 h-10 rounded-full'></img> :
     <Link to="/auth/signup" className="btn btn-neutral">Sign Up</Link>
-    <Link to="/auth/login" className="btn btn-primary">Log In</Link>
+}
+ { user ? user.displayName :
+     <Link to="/auth/login" className="btn btn-primary">Log In</Link>
+}
+
+   
   </div>
 </div>
     </div>
