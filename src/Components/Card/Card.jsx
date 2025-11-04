@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Card = ({game}) => {
-    console.log(game)
+   
   return (
     <Link to={`/gamesdetails/${game.id}`} className="card bg-base-100 cursor-pointer shadow-sm h-full">
   <figure>

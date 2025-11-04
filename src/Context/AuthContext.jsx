@@ -1,5 +1,5 @@
-import React, { createContext, useState } from 'react';
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth"; 
+import React, { createContext, useEffect, useState } from 'react';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth"; 
 import { auth } from '../Firebase/Firebase.config';
 
 export const AuthanticationContext=createContext();
@@ -32,8 +32,13 @@ createUserWithEmailAndPassword(auth,email,password)
 .then(res=>
 {
   const demoUser=res.user;
- setUser({ ...demoUser, displayName: name, photoURL: photo });
-  console.log(user)
+  return updateProfile(demoUser,{
+    displayName:name,
+    photoURL:photo,
+  }).then(()=>
+  {
+setUser({ ...demoUser, displayName: name, photoURL: photo });
+  })
 
 })
 .catch(err=>
@@ -44,8 +49,51 @@ createUserWithEmailAndPassword(auth,email,password)
 
     }
 
+    const handleSignOut=()=>
+    {
+      signOut(auth)
+      .then(r=>
+        {
+          alert("Kitare");
+          console.log(r);
+        }
+      )
+      .catch(err=>
+      {
+        console.log(err)
+      }
+      )
+    }
 
-    const authData={user,setUser,handleGoogle,handleSignIn}
+useEffect(()=>
+{
+const unSubscribe = onAuthStateChanged(auth,(currentUser)=>
+{
+    setUser(currentUser);
+    
+});
+return ()=>
+{
+    unSubscribe(); 
+}
+},[])
+
+const handleLogIn=(email,password)=>
+{
+signInWithEmailAndPassword(auth,email,password)
+.then(()=>
+{
+  alert("Sign In Hoise");
+})
+.catch(err=>
+{
+  console.log(err)
+}
+)
+}
+
+
+    const authData={user,setUser,handleGoogle,handleSignIn,handleSignOut,handleLogIn}
   return (
     <AuthanticationContext.Provider value={authData}>
         {children}

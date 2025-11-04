@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import { AuthanticationContext } from '../../Context/AuthContext';
 
 const Navbar = () => {
-const {user}=useContext(AuthanticationContext);
+const {user,handleSignOut}=useContext(AuthanticationContext);
 console.log(user)
   const link = (
     <>
@@ -16,7 +16,7 @@ console.log(user)
   return (
     <div>
 
-        <div className="navbar bg-base-100 shadow-sm ">
+        <div className="navbar bg-base-100 shadow-sm sm:flex-col lg:flex-row ">
   <Link to="/" className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,6 +42,9 @@ console.log(user)
 }
  { user ? user.displayName :
      <Link to="/auth/login" className="btn btn-primary">Log In</Link>
+}
+ { user ? <button onClick={handleSignOut} className="btn btn-primary mx-3">LogOut</button> :
+     ""
 }
 
    

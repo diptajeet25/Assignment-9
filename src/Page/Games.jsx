@@ -7,8 +7,8 @@ import AuthContext, { AuthanticationContext } from '../Context/AuthContext';
 
 const Games = () => {
     const games=useLoaderData();
-const {user}=use(AuthanticationContext);
-console.log("kire",user);
+const { user }=use(AuthanticationContext);
+
 
     const navigation=useNavigation();
 
