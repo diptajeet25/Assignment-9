@@ -6,6 +6,7 @@ import Authentication from '../Page/Authentication';
 import Login from '../Components/Login/Login';
 import SignUp from '../Components/Signup/SignUp';
 import GamesDetails from '../Page/gamesDetails';
+import About from '../Page/About';
 
 const router=createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router=createBrowserRouter([
             element:<GamesDetails></GamesDetails>,
             loader:()=>fetch("/games.json")
 
+        },
+        {
+            path:"/about",
+            element:<About></About>
         }
 ])
 

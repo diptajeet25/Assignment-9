@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth"; 
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth"; 
 import { auth } from '../Firebase/Firebase.config';
 
 export const AuthanticationContext=createContext();
@@ -24,6 +24,21 @@ const AuthContext = ({children}) => {
         alert("Hoilo Na re Vai")
       }
       )
+    }
+
+    const resetPassword=(email)=>
+    {
+      sendPasswordResetEmail(auth,email)
+      .then((r)=>
+      {
+        console.log(r);
+        alert("Reset Mail Sent")
+      })
+      .catch((err)=>
+      {
+        console.log(err);
+      })
+      
     }
 
     const handleSignIn=(email,password,name,photo)=>
@@ -93,7 +108,7 @@ signInWithEmailAndPassword(auth,email,password)
 }
 
 
-    const authData={user,setUser,handleGoogle,handleSignIn,handleSignOut,handleLogIn}
+    const authData={user,setUser,handleGoogle,handleSignIn,handleSignOut,handleLogIn,resetPassword}
   return (
     <AuthanticationContext.Provider value={authData}>
         {children}

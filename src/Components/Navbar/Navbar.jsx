@@ -9,8 +9,9 @@ console.log(user)
   const link = (
     <>
       <li><Link to="/">Home</Link></li>
+      <li><Link to="/about">About</Link></li>
       <li><Link to="/games">Games</Link></li>
-      <li><Link to="/">Career</Link></li>
+      
     </>
   )
   return (
