@@ -5,7 +5,7 @@ import { AuthanticationContext } from '../../Context/AuthContext';
 
 const Navbar = () => {
 const {user,handleSignOut}=useContext(AuthanticationContext);
-console.log(user)
+
   const link = (
     <>
       <li><Link to="/">Home</Link></li>

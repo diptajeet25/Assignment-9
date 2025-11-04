@@ -10,7 +10,7 @@ const GamesDetails = () => {
 
 
     const desiredData=data.find(d=> d.id==params.id);
-    console.log(desiredData);
+   
   return (
     <div>
         <Navbar></Navbar>

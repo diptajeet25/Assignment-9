@@ -1,0 +1,22 @@
+import React from 'react';
+import error from "../assets/error-404.png"
+import { NavLink } from 'react-router';
+import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
+
+
+const ErrorPage = () => {
+    return (
+        <div>
+            <Navbar></Navbar>
+            <img src={error} alt="" className='w-[25%] my-8 mx-auto'/>
+            <div className=' flex justify-center'>
+            <NavLink to="/" className="btn btn-primary w-36 my-2 mb-6">Back To Home</NavLink>
+            </div>
+  <Footer></Footer>
+            
+        </div>
+    );
+};
+
+export default ErrorPage;

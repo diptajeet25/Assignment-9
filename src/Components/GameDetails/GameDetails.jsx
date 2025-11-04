@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router';
 
 const GameDetails = ({desiredData}) => {
     const navigate=useNavigate();
-    console.log(desiredData)
+   
   return (
     <div className='flex justify-center flex-col my-16 items-start w-[70%] mx-auto gap-2'>
         <img src={desiredData.coverPhoto} alt="" className='w-[80%]' />

@@ -8,6 +8,7 @@ const provider=new GoogleAuthProvider();
 
 const AuthContext = ({children}) => {
     const [user,setUser]=useState();
+    const [email,setEmail]=useState();
 
     const handleGoogle=()=>
     {
@@ -108,7 +109,7 @@ signInWithEmailAndPassword(auth,email,password)
 }
 
 
-    const authData={user,setUser,handleGoogle,handleSignIn,handleSignOut,handleLogIn,resetPassword}
+    const authData={user,setUser,handleGoogle,handleSignIn,handleSignOut,handleLogIn,resetPassword,email,setEmail}
   return (
     <AuthanticationContext.Provider value={authData}>
         {children}
