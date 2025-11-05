@@ -9,7 +9,7 @@ const About = () => {
     <div className="bg-white text-gray-800">
 
         <Navbar></Navbar>
-      <div className="max-w-6xl mx-auto text-center my-12">
+      <div className="max-w-6xl mx-2 lg:mx-auto text-center my-12 ">
        
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
           About Gameverse

@@ -12,19 +12,8 @@ const AuthContext = ({children}) => {
 
     const handleGoogle=()=>
     {
-      signInWithPopup(auth,provider)
-      .then(r=>
-      {
-        console.log(r.user);
-        setUser(r.user);
-        alert("Kire Vai")
-      }
-      ).catch(err=>
-      {
-        console.log(err);
-        alert("Hoilo Na re Vai")
-      }
-      )
+    return   signInWithPopup(auth,provider)
+      
     }
 
     const resetPassword=(email)=>
@@ -96,16 +85,8 @@ return ()=>
 
 const handleLogIn=(email,password)=>
 {
-signInWithEmailAndPassword(auth,email,password)
-.then(()=>
-{
-  alert("Sign In Hoise");
-})
-.catch(err=>
-{
-  console.log(err)
-}
-)
+return signInWithEmailAndPassword(auth,email,password);
+
 }
 
 

@@ -9,6 +9,7 @@ import GamesDetails from '../Page/gamesDetails';
 import About from '../Page/About';
 import ErrorPage from '../Page/ErrorPage';
 import Resetpassword from '../Components/ResetPassword/Resetpassword';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const router=createBrowserRouter([
     {
@@ -31,7 +32,7 @@ const router=createBrowserRouter([
         },
         {
             path:"/gamesdetails/:id",
-            element:<GamesDetails></GamesDetails>,
+            element:<PrivateRoute><GamesDetails></GamesDetails></PrivateRoute>,
             loader:()=>fetch("/games.json")
 
         },

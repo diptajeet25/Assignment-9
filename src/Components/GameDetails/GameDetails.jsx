@@ -11,7 +11,7 @@ const GameDetails = ({desiredData}) => {
         <h3 className='text-gray-400 text-lg'>{desiredData.developer}</h3>
         <p className="text-md">{desiredData.description}</p>
         <h2 className='btn btn-outline btn-primary p-3 rounded-3xl'>Ratings: {desiredData.ratings}</h2>
-        <div className='flex mx-[35%] my-4 gap-6 justify-center'>
+        <div className='flex flex-col lg:flex-row mx-[5%] lg:mx-[35%] my-4 gap-6 justify-center'>
         <button onClick={() => navigate(-1)} className="btn btn-accent w-full text-xl">Back</button>
         <Link to={desiredData.downloadLink} className="btn btn-primary w-full text-xl">Install Now</Link>
         </div>

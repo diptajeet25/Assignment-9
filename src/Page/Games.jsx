@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import { useLoaderData, useNavigation } from 'react-router';
 import Card from '../Components/Card/Card';
@@ -7,8 +7,6 @@ import AuthContext, { AuthanticationContext } from '../Context/AuthContext';
 
 const Games = () => {
     const games=useLoaderData();
-const { user }=use(AuthanticationContext);
-
 
     const navigation=useNavigation();
 
