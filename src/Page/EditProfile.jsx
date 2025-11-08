@@ -13,13 +13,13 @@ const EditProfile = () => {
         e.preventDefault();
 const name=e.target.name.value;
 const photo=e.target.photoURL.value;
-console.log(name,photo)  ;
+
 profileUpdate(name,photo)  
 .then(() => {
     navigate('/profile'); 
   })
-  .catch((err) => {
-    console.log(err);
+  .catch(() => {
+ 
   });
     };
 

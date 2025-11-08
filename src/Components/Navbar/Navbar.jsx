@@ -13,8 +13,8 @@ const signOut=()=>
   .then(() => {
     navigate('/auth/login'); 
   })
-  .catch((err) => {
-    console.log(err);
+  .catch(() => {
+
   });
   
 }

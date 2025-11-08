@@ -39,7 +39,7 @@ try {
 const googleSignIn = async () => {
   try {
     const r = await handleGoogle();
-    console.log(r.user);
+   
     setUser(r.user);
     toast.success("Google Sign In SuccessFull");
     

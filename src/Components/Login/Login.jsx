@@ -13,7 +13,7 @@ const Login = () => {
 e.preventDefault();
 const email=e.target.email.value;
 const password=e.target.password.value;
-console.log(email,password);
+
 handleLogIn(email,password)
 .then(()=>
 {
@@ -34,12 +34,12 @@ navigate(location.state ? location.state : "/")
 const googleSignIn = async () => {
   try {
     const r = await handleGoogle();
-    console.log(r.user);
+  
     setUser(r.user);
    toast.success("Google Sign In SuccessFull");
     navigate(location.state ? location.state : "/");
   } catch (err) {
-    console.log(err);
+    
    toast.error(err.message);
   }
 };

@@ -24,14 +24,14 @@ const AuthContext = ({children}) => {
     {
       
       sendPasswordResetEmail(auth,email)
-      .then((r)=>
+      .then(()=>
       {
-        console.log(r);
+       
        toast.success("Password Reset Email Sent!");
       })
       .catch((err)=>
       {
-        console.log(err);
+       
         toast.error(err.message);
       })
       
