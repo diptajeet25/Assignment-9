@@ -1,16 +1,34 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router';
+import React, {  useContext } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router';
 import logo from '../../assets/logo.png'
 import { AuthanticationContext } from '../../Context/AuthContext';
 
 const Navbar = () => {
 const {user,handleSignOut}=useContext(AuthanticationContext);
+const navigate=useNavigate();
+
+const signOut=()=>
+{
+  handleSignOut()
+  .then(() => {
+    navigate('/auth/login'); 
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+  
+}
 
   const link = (
     <>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/about">About</Link></li>
       <li><Link to="/games">Games</Link></li>
+      {
+        user ?
+        <li><Link to="/profile">My Profile</Link></li>
+        :""
+      }
       
     </>
   )
@@ -38,13 +56,13 @@ const {user,handleSignOut}=useContext(AuthanticationContext);
     </ul>
   </div>
   <div className="navbar-end flex gap-2">
-    { user ? <img src={user.photoURL}  className='w-10 h-10 rounded-full'></img> :
+    { user ? <Link to="/profile"><img src={user.photoURL}  className='w-10 h-10 rounded-full'></img></Link> :
     <Link to="/auth/signup" className="btn btn-neutral">Sign Up</Link>
 }
- { user ? user.displayName :
+ { user ? <Link to="/profile">{user.displayName}</Link> :
      <Link to="/auth/login" className="btn btn-primary">Log In</Link>
 }
- { user ? <button onClick={handleSignOut} className="btn btn-primary mx-3">LogOut</button> :
+ { user ? <button onClick={signOut} className="btn btn-primary mx-3">LogOut</button> :
      ""
 }
 

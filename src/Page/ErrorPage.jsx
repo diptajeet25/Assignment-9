@@ -8,6 +8,7 @@ import Footer from '../Components/Footer/Footer';
 const ErrorPage = () => {
     return (
         <div>
+            <title>Error 404 - Page Not Found</title>
             <Navbar></Navbar>
             <img src={error} alt="" className='w-[25%] my-8 mx-auto'/>
             <div className=' flex justify-center'>

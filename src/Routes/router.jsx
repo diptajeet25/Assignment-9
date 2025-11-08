@@ -10,6 +10,8 @@ import About from '../Page/About';
 import ErrorPage from '../Page/ErrorPage';
 import Resetpassword from '../Components/ResetPassword/Resetpassword';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Profile from '../Page/Profile';
+import EditProfile from '../Page/EditProfile';
 
 const router=createBrowserRouter([
     {
@@ -43,6 +45,14 @@ const router=createBrowserRouter([
         {
             path:"*",
             element:<ErrorPage></ErrorPage>
+        },
+        {
+            path:"/profile",
+            element:<PrivateRoute><Profile></Profile></PrivateRoute>
+        },
+        {
+            path:"/editprofile",
+            element:<PrivateRoute><EditProfile></EditProfile></PrivateRoute>
         }
 ])
 

@@ -8,6 +8,7 @@ import Footer from '../Components/Footer/Footer';
 const Root = () => {
   return (
     <div className='flex flex-col'>
+      <title>Home - GameVerse</title>
         <Navbar></Navbar>
         <div>
         <Carsoul></Carsoul>

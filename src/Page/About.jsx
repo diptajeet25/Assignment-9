@@ -7,6 +7,7 @@ import Footer from "../Components/Footer/Footer";
 const About = () => {
   return (
     <div className="bg-white text-gray-800">
+      <title>About Us - GameVerse</title>
 
         <Navbar></Navbar>
       <div className="max-w-6xl mx-2 lg:mx-auto text-center my-12 ">

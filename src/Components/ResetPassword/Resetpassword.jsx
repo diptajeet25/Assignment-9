@@ -17,6 +17,7 @@ e.preventDefault();
 }
   return (
     <div className='w-[80%] mx-auto'>
+      <title>Reset Password - GameZone</title>
         
  
     <div className="card bg-base-100 max-w-sm shrink-0 shadow-2xl  mt-16 mb-24  mx-auto">

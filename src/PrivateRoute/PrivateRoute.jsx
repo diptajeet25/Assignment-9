@@ -4,11 +4,15 @@ import { Navigate, useLocation } from 'react-router';
 
 const PrivateRoute = ({children}) => {
     const loc=useLocation();
-    console.log(loc);
+   
     
 
 
-    const {user}=useContext(AuthanticationContext);
+    const {user,loading}=useContext(AuthanticationContext);
+    if(loading)
+    {
+      return <div className='flex justify-center my-80'><div className="loading loading-infinity loading-xl"></div></div>
+    }
     if(user)
   return children;
 else{
